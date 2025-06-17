@@ -3,101 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Tutto sulla Meteorologia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Nunito', sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fdfaf6;
       display: flex;
-      background-color: #fffef9;
-      color: #1a2c41;
+      height: 100vh;
+      color: #2c3e50;
     }
 
     .sidebar {
-      width: 260px;
-      background-color: #f0f4f8;
-      padding: 20px;
-      border-left: 3px solid #ccc;
-      height: 100vh;
+      width: 280px;
+      background-color: #fafafa;
+      padding: 30px 20px;
+      border-left: 4px solid #dfe6e9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .sidebar h2 {
-      font-size: 20px;
-      margin-bottom: 15px;
-      color: #1a2c41;
+      font-size: 22px;
+      margin-bottom: 20px;
     }
 
     .sidebar ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
     }
 
     .sidebar ul li {
-      margin: 12px 0;
+      margin: 15px 0;
+      font-size: 18px;
     }
 
-    .sidebar ul li a {
-      text-decoration: none;
-      color: #2a6eea;
+    .sidebar ul li::before {
+      content: "• ";
+      color: #2c3e50;
       font-weight: bold;
     }
 
-    .content {
+    .main {
       flex: 1;
-      padding: 50px;
+      padding: 60px;
       text-align: center;
     }
 
-    .content h1 {
-      font-size: 42px;
-      color: #1a2c41;
+    .main h1 {
+      font-size: 48px;
+      color: #264653;
+      margin-bottom: 40px;
     }
 
     .icons {
-      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
     }
 
     .icons img {
       width: 80px;
-      margin: 10px;
-      transition: transform 0.3s;
+      height: auto;
     }
 
-    .icons img:hover {
-      transform: scale(1.1);
-    }
-
-    .footer-text {
-      margin-top: 40px;
-      font-size: 18px;
+    .description {
+      font-size: 20px;
       color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="content">
+  <div class="main">
     <h1>Tutto sulla Meteorologia</h1>
-
     <div class="icons">
-      <img src="https://img.icons8.com/color/96/sun--v1.png" alt="Sole">
-      <img src="https://img.icons8.com/color/96/cloud.png" alt="Nuvola">
-      <img src="https://img.icons8.com/color/96/storm.png" alt="Fulmine">
-      <img src="https://img.icons8.com/color/96/snow.png" alt="Neve">
-      <img src="https://img.icons8.com/color/96/rain.png" alt="Pioggia">
+      <img src="https://img.icons8.com/fluency/96/sun.png" alt="Sole">
+      <img src="https://img.icons8.com/fluency/96/cloud.png" alt="Nuvola">
+      <img src="https://img.icons8.com/fluency/96/lightning-bolt.png" alt="Fulmine">
+      <img src="https://img.icons8.com/fluency/96/clouds.png" alt="Nuvole scure">
+      <img src="https://img.icons8.com/fluency/96/rain.png" alt="Pioggia">
+      <img src="https://img.icons8.com/fluency/96/snow.png" alt="Neve">
     </div>
-
-    <div class="footer-text">
-      <p>Cambiamenti climatici, fenomeni estremi, curiosità e scienza. Tutto spiegato in modo semplice!</p>
+    <div class="description">
+      <p>Cambiamenti climatici, fenomeni estremi, curiosità e scienza.</p>
+      <p>Tutto spiegato in modo semplice!</p>
     </div>
   </div>
-
   <div class="sidebar">
     <h2>Cosa vuoi sapere?</h2>
     <ul>
-      <li><a href="#">🌩️ Fulmini</a></li>
-      <li><a href="#">🌡️ Temperature</a></li>
-      <li><a href="#">💨 Vento</a></li>
-      <li><a href="#">🌍 Cambiamenti Climatici</a></li>
+      <li>Fulmini</li>
+      <li>Temperature</li>
+      <li>Vento</li>
+      <li>Cambiamenti Climatici</li>
     </ul>
   </div>
 </body>
