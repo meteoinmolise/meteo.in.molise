@@ -3,9 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Tutto sulla Meteorologia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #fefdfb;
+    }
+
+    /* Menu laterale */
+    .sidebar {
+      width: 250px;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-left: 2px solid #ccc;
+      height: 100vh;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 40px;
+      color: #264b70;
+    }
+
+    .icons {
+      margin: 30px 0;
+    }
+
+    .icons img {
+      width: 80px;
+      margin: 10px;
+    }
+
+    .footer-text {
+      margin-top: 50px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Benvenuto nel sito di Meteorologia</h1>
-  <p>Qui troverai informazioni su fulmini, vento, cambiamenti climatici e tanto altro!</p>
+  <div class="content">
+    <h1>Tutto sulla Meteorologia</h1>
+
+    <div class="icons">
+      <img src="https://img.icons8.com/ios-filled/100/sun--v1.png" alt="Sole">
+      <img src="https://img.icons8.com/ios-filled/100/cloud.png" alt="Nuvola">
+      <img src="https://img.icons8.com/ios-filled/100/lightning-bolt.png" alt="Fulmine">
+      <img src="https://img.icons8.com/ios-filled/100/snow.png" alt="Neve">
+      <img src="https://img.icons8.com/ios-filled/100/rain.png" alt="Pioggia">
+    </div>
+
+    <div class="footer-text">
+      <p>Cambiamenti climatici, fenomeni estremi, curiosità e scienza. Tutto spiegato in modo semplice!</p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2>Cosa vuoi sapere?</h2>
+    <ul>
+      <li><a href="#">Fulmini</a></li>
+      <li><a href="#">Temperature</a></li>
+      <li><a href="#">Vento</a></li>
+      <li><a href="#">Cambiamenti Climatici</a></li>
+    </ul>
+  </div>
 </body>
 </html>
