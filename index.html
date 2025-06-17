@@ -1,102 +1,34 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tutto sulla Meteorologia</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fbf8f2;
-      display: flex;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .left {
-      flex: 1;
-      padding: 40px;
-      position: relative;
-    }
-    .left h1 {
-      font-size: 50px;
-      color: #24415c;
-      margin-top: 200px;
-    }
-    .icons {
-      position: absolute;
-      top: 20px;
-      left: 40px;
-      width: 80%;
-      height: auto;
-    }
-    .icons img {
-      width: 90px;
-      margin: 10px;
-    }
-    .right {
-      width: 300px;
-      background-color: #fefefe;
-      border-left: 2px solid #ddd;
-      padding: 40px 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    .right h2 {
-      font-size: 22px;
-      color: #24415c;
-      margin-bottom: 20px;
-    }
-    .menu-icon {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      font-size: 26px;
-      line-height: 10px;
-    }
-    .right ul {
-      list-style: none;
-      padding: 0;
-    }
-    .right ul li {
-      font-size: 18px;
-      margin: 12px 0;
-      color: #24415c;
-    }
-    .drop {
-      width: 20px;
-      display: inline-block;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="left">
-    <div class="icons">
-      <img src="https://img.icons8.com/emoji/96/sun-emoji.png" alt="Sole">
-      <img src="https://img.icons8.com/ios-filled/100/8ca6c1/cloud.png" alt="Nuvola">
-      <img src="https://img.icons8.com/ios-filled/100/3f3f3f/lightning-bolt.png" alt="Fulmine">
-      <img src="https://img.icons8.com/ios-filled/100/3f3f3f/rain-cloud.png" alt="Pioggia">
-      <img src="https://img.icons8.com/ios-filled/100/8ca6c1/rainy-weather.png" alt="Pioggia2">
-      <img src="https://img.icons8.com/ios-filled/100/68a6d9/snowflake.png" alt="Neve">
+  <div class="container">
+    <div class="main-section">
+      <div class="icons">
+        <img src="img/sole.svg" class="icon" />
+        <img src="img/nuvola1.svg" class="icon" />
+        <img src="img/nuvola2.svg" class="icon" />
+        <img src="img/fulmine1.svg" class="icon" />
+        <img src="img/goccia.svg" class="icon" />
+        <img src="img/fiocco.svg" class="icon" />
+      </div>
+      <h1>Tutto sulla<br><strong>Meteorologia</strong></h1>
     </div>
-    <h1>Tutto sulla<br>Meteorologia</h1>
-  </div>
-  <div class="right">
-    <div class="menu-icon">
-      <div>≡</div>
+    <div class="sidebar">
+      <div class="menu-icon">&#9776;</div>
+      <h2>Cosa vuoi sapere?</h2>
+      <ul>
+        <li>Fulmini</li>
+        <li>Temperature</li>
+        <li>Vento</li>
+        <li>Cambiamenti Climatici</li>
+      </ul>
     </div>
-    <h2>Cosa vuoi sapere?</h2>
-    <ul>
-      <li>• Fulmini</li>
-      <li>• Temperature</li>
-      <li>• Vento</li>
-      <li>• Cambiamenti Climatici</li>
-    </ul>
   </div>
 </body>
 </html>
