@@ -1,35 +1,113 @@
-.sun {
-  top: 0;
-  left: 10%;
-  width: 100px;
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fffaf3;
+  color: #12334a;
 }
 
-.cloud1 {
-  top: 10%;
-  right: 10%;
-  width: 90px;
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.cloud2 {
-  bottom: 20%;
-  left: 0;
-  width: 110px;
+.main-section {
+  flex: 3;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bolt {
-  top: 20%;
-  left: 70%;
-  width: 85px;
+h1 {
+  font-size: 64px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  line-height: 1.2;
+  color: #1b3a4b;
 }
 
-.drop {
-  bottom: 10%;
-  right: 15%;
-  width: 80px;
+/* Sidebar destra */
+.sidebar {
+  flex: 1;
+  background-color: #f9f6f0;
+  padding: 60px 40px;
+  border-left: 4px solid #eceae5;
+  display: flex;
+  flex-direction: column;
 }
 
-.snow {
-  top: 5%;
-  right: 40%;
-  width: 90px;
+.menu-icon {
+  font-size: 36px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.sidebar h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* Icone stile immagine */
+.icon {
+  position: absolute;
+  z-index: 1;
+}
+
+.sole {
+  top: 20px;
+  left: 40px;
+  width: 120px;
+}
+
+.nuvola1 {
+  top: 50px;
+  left: 200px;
+  width: 140px;
+}
+
+.nuvola2 {
+  top: 60px;
+  right: 180px;
+  width: 130px;
+}
+
+.fulmine1 {
+  top: 120px;
+  right: 110px;
+  width: 60px;
+}
+
+.goccia1 {
+  top: 200px;
+  right: 60px;
+  width: 40px;
+}
+
+.nuvola3 {
+  bottom: 100px;
+  left: 80px;
+  width: 160px;
+}
+
+.goccia2 {
+  bottom: 90px;
+  left: 250px;
+  width: 30px;
+}
+
+.fiocco {
+  bottom: 40px;
+  right: 100px;
+  width: 120px;
 }
