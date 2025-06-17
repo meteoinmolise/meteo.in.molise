@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Tutto sulla Meteorologia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Nunito', sans-serif;
       display: flex;
-      background-color: #fefdfb;
+      background-color: #fffef9;
+      color: #1a2c41;
     }
 
-    /* Menu laterale */
     .sidebar {
-      width: 250px;
-      background-color: #f5f5f5;
+      width: 260px;
+      background-color: #f0f4f8;
       padding: 20px;
-      border-left: 2px solid #ccc;
+      border-left: 3px solid #ccc;
       height: 100vh;
     }
 
     .sidebar h2 {
-      font-size: 18px;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #1a2c41;
     }
 
     .sidebar ul {
@@ -30,18 +33,24 @@
     }
 
     .sidebar ul li {
-      margin: 10px 0;
+      margin: 12px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #2a6eea;
+      font-weight: bold;
     }
 
     .content {
       flex: 1;
-      padding: 40px;
+      padding: 50px;
       text-align: center;
     }
 
     .content h1 {
-      font-size: 40px;
-      color: #264b70;
+      font-size: 42px;
+      color: #1a2c41;
     }
 
     .icons {
@@ -51,11 +60,17 @@
     .icons img {
       width: 80px;
       margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    .icons img:hover {
+      transform: scale(1.1);
     }
 
     .footer-text {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 18px;
+      color: #333;
     }
   </style>
 </head>
@@ -64,11 +79,11 @@
     <h1>Tutto sulla Meteorologia</h1>
 
     <div class="icons">
-      <img src="https://img.icons8.com/ios-filled/100/sun--v1.png" alt="Sole">
-      <img src="https://img.icons8.com/ios-filled/100/cloud.png" alt="Nuvola">
-      <img src="https://img.icons8.com/ios-filled/100/lightning-bolt.png" alt="Fulmine">
-      <img src="https://img.icons8.com/ios-filled/100/snow.png" alt="Neve">
-      <img src="https://img.icons8.com/ios-filled/100/rain.png" alt="Pioggia">
+      <img src="https://img.icons8.com/color/96/sun--v1.png" alt="Sole">
+      <img src="https://img.icons8.com/color/96/cloud.png" alt="Nuvola">
+      <img src="https://img.icons8.com/color/96/storm.png" alt="Fulmine">
+      <img src="https://img.icons8.com/color/96/snow.png" alt="Neve">
+      <img src="https://img.icons8.com/color/96/rain.png" alt="Pioggia">
     </div>
 
     <div class="footer-text">
@@ -79,10 +94,10 @@
   <div class="sidebar">
     <h2>Cosa vuoi sapere?</h2>
     <ul>
-      <li><a href="#">Fulmini</a></li>
-      <li><a href="#">Temperature</a></li>
-      <li><a href="#">Vento</a></li>
-      <li><a href="#">Cambiamenti Climatici</a></li>
+      <li><a href="#">🌩️ Fulmini</a></li>
+      <li><a href="#">🌡️ Temperature</a></li>
+      <li><a href="#">💨 Vento</a></li>
+      <li><a href="#">🌍 Cambiamenti Climatici</a></li>
     </ul>
   </div>
 </body>
