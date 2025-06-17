@@ -19,10 +19,10 @@
       <img src="img/fiocco.svg" class="icon fiocco" />
 
       <h1>Tutto sulla<br><strong>Meteorologia</strong></h1>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </div>
 
-    <div class="sidebar">
-      <div class="menu-icon">&#9776;</div>
+    <div class="sidebar" id="sidebar">
       <h2>Cosa vuoi sapere?</h2>
       <ul>
         <li>Fulmini</li>
@@ -32,5 +32,12 @@
       </ul>
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("visible");
+    }
+  </script>
 </body>
 </html>
